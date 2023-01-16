@@ -25,7 +25,7 @@ public enum Intervals {
     DAY_1("1d"),
     DAY_3("3d"),
     WEEK_1("1w"),
-    MONTH_1("1m");
+    MONTH_1("1M");
 	
 	public static Intervals from(String toString) {
 		for (Intervals interval : values())

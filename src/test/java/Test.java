@@ -17,7 +17,7 @@ public class Test {
 		final String symbol = 
 		in("Enter the desired symbol (ie BTCUSDT) : ", String.class);
 		final Intervals interval = 
-		in("Enter the desired interval (ie 15m) : ", Intervals.class);
+		in("Enter the desired interval (1s, 1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d, 3d, 1w, 1M) : ", Intervals.class);
 		final int limit = 
 		in("Enter the amount of candles needed : ", Integer.class);
 		
@@ -48,10 +48,6 @@ public class Test {
 			candles.forEach(System.out::println);
 		
 	}
-	
-	
-	
-	
 	
 	private static void out(String m) {
 		System.out.println(m);
